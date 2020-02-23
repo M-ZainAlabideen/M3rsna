@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+
+    <RadioButton
+        android:id="@+id/item_payment_method_rb_methodCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="10dp"
+        android:text=""
+        android:checked="false"
+        android:button="@drawable/radio_selector"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/item_payment_method_iv_methodImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/item_payment_method_rb_methodCheck"
+        app:layout_constraintEnd_toStartOf="@+id/item_payment_method_rb_methodCheck"
+        app:layout_constraintTop_toTopOf="@+id/item_payment_method_rb_methodCheck"
+        app:srcCompat="@mipmap/payment_card" />
+
+    <TextView
+        android:id="@+id/item_payment_method_tv_methodName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="فيزا"
+        app:layout_constraintBottom_toBottomOf="@+id/item_payment_method_iv_methodImage"
+        app:layout_constraintEnd_toStartOf="@+id/item_payment_method_iv_methodImage"
+        app:layout_constraintTop_toTopOf="@+id/item_payment_method_iv_methodImage" />
+
+    <TextView
+        android:id="@+id/item_payment_method_tv_methodPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20 دينار كويتي"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/item_payment_method_v_select"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

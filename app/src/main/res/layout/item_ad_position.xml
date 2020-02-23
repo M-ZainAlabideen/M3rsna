@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginTop="10dp"
+    android:background="@mipmap/box_ad_position">
+
+
+    <ImageView
+        android:id="@+id/item_ad_position_iv_positionImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/placeholder_ad_position_image" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/item_ad_position_iv_positionImg"
+        app:layout_constraintStart_toEndOf="@+id/item_ad_position_iv_positionImg"
+        app:layout_constraintTop_toTopOf="@+id/item_ad_position_iv_positionImg">
+
+        <TextView
+            android:id="@+id/item_ad_position_tv_adPosition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="سلايدر الصفحة الأولي"
+            android:textSize="16dp"
+            android:textColor="@color/grayDark"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="150dp" />
+
+        <TextView
+            android:id="@+id/item_ad_position_tv_adDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="المدة : أيام"
+            android:textSize="14sp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/grayDark"
+            app:layout_constraintStart_toStartOf="@+id/item_ad_position_tv_adPosition"
+            app:layout_constraintTop_toBottomOf="@+id/item_ad_position_tv_adPosition" />
+
+        <TextView
+            android:id="@+id/item_ad_position_tv_adPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="السعر: 50.000 دك"
+            android:textSize="14sp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/orange"
+            app:layout_constraintStart_toStartOf="@+id/item_ad_position_tv_adDuration"
+            app:layout_constraintTop_toBottomOf="@+id/item_ad_position_tv_adDuration" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

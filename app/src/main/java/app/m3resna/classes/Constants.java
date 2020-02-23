@@ -1,0 +1,51 @@
+package app.m3resna.classes;
+
+public class Constants {
+
+    //public static final String BASE_URL_ = "http://demo.m3rsna.com";
+    public static final String BASE_URL_ = "https://m3rsna.com";
+    public static final String BASE_URL = BASE_URL_ + "/api/";
+    public static final String AUTHORIZATION = "Authorization";
+    public static final String MONTSERRAT_REGULAR = "montserrat_regular.ttf";
+    public static final String DROID_ARABIC_REGULAR = "droid_arabic_regular.ttf";
+    public static final String CAIRO_REGULAR = "cairo_regular.ttf";
+    public static final String MONTSERRAT_MEDIUM = "montserrat_medium.ttf";
+    public static final String AR = "ar";
+    public static final String EN = "en";
+    public static final String INSTAGRAM = "instagram";
+    public static final String TWITTER = "twitter";
+    public static final String WHATS_APP = "whatsapp";
+    public static final String CATEGORY = "category";
+    public static final String ACCOUNT = "account";
+    public static final String FAVORITES = "favorites";
+    public static final String NOTIFICATIONS = "notifications";
+    public static final String COUNTRY = "country";
+    public static final String CITY = "city";
+    public static final String ZONE = "zone";
+    public static final String GENDER = "gender";
+    public static final String AD_POSITION = "adPosition";
+    public static final String PAYMENT_METHOD = "paymentMethod";
+    public static final String IS_TERMS = "isTerms";
+    public static final String SUCCESS_PAGE = "PaymentConfermation";
+    public static final String ERROR_PAGE = "Error";
+    public static final String PRODUCT = "product";
+    public static final String VIDEO = "video";
+    public static final String MY_ADS = "myAds";
+    public static final String AD_ID = "adId";
+    public static final String I = "i";
+    public static final String V = "v";
+    public static final String M3RESNA_APP = "m3resnaApp";
+    public static final String PRODUCT_ID = "productId";
+    public static final String IPHONE_LINK = "AppleStoreLink";
+    public static final String ANDROID_LINK = "GooglePlayLink";
+    public static final String IS_HOME_FULL_AD = "isHomeFullAd";
+    public static final String FLAG = "flag";
+    public static final String LONGITUDE = "longitude";
+    public static final String LATITUDE = "latitude";
+    public static final String IMAGE = "image";
+    public static final String FACEBOOK = "facebook";
+    public static final String SNAP_CHAT = "snapchat";
+    public static final String SHOW_VIEWS =  "IShowNumberOfUse";
+    public static final String OFF = "off";
+    public static final String ON = "on";
+}

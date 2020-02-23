@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/item_main_cv_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="12dp"
+        android:layout_margin="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/item_main_cl_"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/item_main_iv_image"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@mipmap/placeholder_item_main" />
+
+
+            <ImageView
+                android:id="@+id/item_main_iv_shadow"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:scaleType="fitXY"
+                app:layout_constraintBottom_toBottomOf="@+id/item_main_cl_"
+                app:layout_constraintEnd_toEndOf="@+id/item_main_cl_"
+                app:layout_constraintStart_toStartOf="@+id/item_main_cl_"
+                app:layout_constraintTop_toTopOf="@+id/item_main_cl_"
+                app:srcCompat="@mipmap/shadow_item_main" />
+
+            <ImageView
+                android:id="@+id/item_main_iv_makeRemoveFav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                app:layout_constraintStart_toStartOf="@+id/item_main_cl_"
+                app:layout_constraintTop_toTopOf="@+id/item_main_cl_"
+                app:srcCompat="@mipmap/ic_heart_unsel" />
+
+            <TextView
+                android:id="@+id/item_main_tv_item_ProductName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="إسم القاعة سوف يكون هنا"
+                android:textColor="@color/white"
+                style="@style/TextAppearance.AppCompat.Large"
+                android:gravity="center"
+                android:lines="2"
+                android:lineSpacingMultiplier=".75"
+                app:layout_constraintEnd_toEndOf="@+id/item_main_cl_"
+                app:layout_constraintStart_toStartOf="@+id/item_main_cl_"
+                app:layout_constraintTop_toBottomOf="@+id/item_main_iv_makeRemoveFav" />
+
+
+            <TextView
+                android:id="@+id/item_main_tv_item_categoryName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:lines="2"
+                android:gravity="center|start"
+                android:textColor="@color/white"
+                android:text="قاعات"
+                android:textAlignment="viewStart"
+                android:lineSpacingMultiplier=".75"
+                style="@style/TextAppearance.AppCompat.Large"
+                app:layout_constraintBottom_toBottomOf="@+id/item_main_cl_"
+                app:layout_constraintStart_toStartOf="@+id/item_main_cl_"
+                app:layout_constraintTop_toTopOf="@+id/item_main_cl_" />
+
+            <ImageView
+                android:id="@+id/item_main_iv_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="@+id/item_main_cl_"
+                app:layout_constraintEnd_toEndOf="@+id/item_main_cl_"
+                app:srcCompat="@mipmap/ic_delete_ad" />
+
+            <ImageView
+                android:id="@+id/item_main_iv_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="12dp"
+                app:layout_constraintBottom_toBottomOf="@+id/item_main_iv_delete"
+                app:layout_constraintEnd_toStartOf="@+id/item_main_iv_delete"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/item_main_tv_item_ProductName"
+                app:layout_constraintTop_toTopOf="@+id/item_main_iv_delete"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@mipmap/ic_edit" />
+
+            <ImageView
+                android:id="@+id/item_main_iv_pin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="@+id/item_main_cl_"
+                app:layout_constraintTop_toTopOf="@+id/item_main_cl_"
+                app:srcCompat="@mipmap/ic_pin" />
+
+            <ProgressBar
+                android:id="@+id/loading"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminateTint="@color/orange"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/item_main_tv_endAd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/box_end_date"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/endAd"
+                android:textColor="@color/red"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/item_main_tv_renewAd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/bg_btn_renew"
+                android:gravity="center"
+                android:text="@string/renewAd"
+                android:textColor="@color/white"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

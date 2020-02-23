@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightGray2">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/fragment_registration_cl_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/fragment_about_us_iv_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@mipmap/logo" />
+
+            <ImageView
+                android:id="@+id/fragment_login_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:background="@mipmap/box_input"
+                android:ems="10"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fragment_about_us_iv_logo" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/box_input"
+                app:layout_constraintBottom_toBottomOf="@+id/fragment_login_et"
+                app:layout_constraintEnd_toEndOf="@+id/fragment_login_et"
+                app:layout_constraintStart_toStartOf="@+id/fragment_login_et"
+                app:layout_constraintTop_toTopOf="@+id/fragment_login_et">
+
+                <ImageView
+                    android:id="@+id/fragment_registration_iv_countryFlag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:src="@mipmap/placeholder_flag"
+                    app:layout_constraintBottom_toBottomOf="@+id/fragment_registration_tv_countryName"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/fragment_registration_tv_countryName" />
+
+                <TextView
+                    android:id="@+id/fragment_registration_tv_countryName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="الكويت"
+                    android:textAlignment="viewStart"
+                    android:textSize="14sp"
+                    android:textColor="@color/grayDark"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/fragment_registration_iv_countryFlag"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView554"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.605"
+                    app:srcCompat="@mipmap/ic_arrow_down" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:id="@+id/fragment_registration_v_selectCountry"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="@+id/constraintLayout5"
+                app:layout_constraintEnd_toEndOf="@+id/constraintLayout5"
+                app:layout_constraintStart_toStartOf="@+id/constraintLayout5"
+                app:layout_constraintTop_toTopOf="@+id/constraintLayout5" />
+
+
+       
+                <EditText
+                    android:id="@+id/fragment_registration_et_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/box_input"
+                    android:ems="10"
+                    android:hint="@string/name"
+                    android:textSize="14sp"
+                    android:inputType="textPersonName"
+                    android:layout_marginTop="16dp"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/grayDark"
+                    app:layout_constraintEnd_toEndOf="@+id/constraintLayout5"
+                    app:layout_constraintStart_toStartOf="@+id/constraintLayout5"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout5"/>
+
+            
+
+            <EditText
+                android:id="@+id/fragment_registration_et_phone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/box_input"
+                android:ems="10"
+                android:hint="@string/phoneNumber"
+                android:inputType="phone"
+                android:layout_marginTop="16dp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/grayDark"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@+id/fragment_registration_et_name"
+                app:layout_constraintStart_toStartOf="@+id/fragment_registration_et_name"
+                app:layout_constraintTop_toBottomOf="@+id/fragment_registration_et_name"/>
+
+            
+
+            <EditText
+                android:id="@+id/fragment_registration_et_email"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/box_input"
+                android:ems="10"
+                style="@style/Widget.AppCompat.EditText"
+                android:textSize="14sp"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:layout_marginTop="16dp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/grayDark"
+                app:layout_constraintEnd_toEndOf="@+id/fragment_registration_et_phone"
+                app:layout_constraintStart_toStartOf="@+id/fragment_registration_et_phone"
+                app:layout_constraintTop_toBottomOf="@+id/fragment_registration_et_phone"/>
+
+                
+
+            <EditText
+                android:id="@+id/fragment_registration_et_password"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@mipmap/box_input"
+                android:ems="10"
+                style="@style/Widget.AppCompat.EditText"
+                android:textSize="14sp"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/grayDark"
+                app:layout_constraintEnd_toEndOf="@+id/fragment_registration_et_email"
+                app:layout_constraintStart_toStartOf="@+id/fragment_registration_et_email"
+                app:layout_constraintTop_toBottomOf="@+id/fragment_registration_et_email" />
+
+            <TextView
+                android:id="@+id/fragment_registration_tv_register"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="16dp"
+                android:background="@mipmap/bg_btn_login"
+                android:gravity="center"
+                android:text="@string/register"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/fragment_registration_et_password"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/fragment_registration_et_password"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fragment_registration_et_password">
+
+                <CheckBox
+                    android:id="@+id/fragment_registration_cb_agree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/checkbox_selector"
+                    android:paddingStart="8dp"
+                    android:paddingTop="15dp"
+                    android:paddingEnd="5dp"
+                    android:paddingBottom="15dp"
+                    android:text="@string/agree"
+                    android:textColor="@color/gray"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="@+id/fragment_registration_tv_register"
+                    app:layout_constraintTop_toBottomOf="@+id/fragment_registration_tv_register" />
+
+                <TextView
+                    android:id="@+id/fragment_registration_tv_terms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:text="@string/terms"
+                    android:textColor="@color/orange"
+                    android:textSize="13sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/fragment_registration_cb_agree"
+                    app:layout_constraintEnd_toEndOf="@+id/fragment_registration_tv_register"
+                    app:layout_constraintStart_toEndOf="@+id/fragment_registration_cb_agree"
+                    app:layout_constraintTop_toTopOf="@+id/fragment_registration_cb_agree" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/loading"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateTint="@color/orange"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

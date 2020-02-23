@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_main_cl_activityContainer">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_main_ab_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@mipmap/box_top_bar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:toolbarId="@+id/toolbar">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/app_bar_main_tb_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:contentInsetLeft="0dp"
+                app:contentInsetRight="0dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/app_bar_main_iv_back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@mipmap/ic_back" />
+
+                    <ImageView
+                        android:id="@+id/app_bar_main_iv_filter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/app_bar_main_iv_back"
+                        app:layout_constraintLeft_toRightOf="@+id/app_bar_main_iv_back"
+                        app:layout_constraintTop_toTopOf="@+id/app_bar_main_iv_back"
+                        app:srcCompat="@mipmap/ic_filter" />
+
+                    <TextView
+                        android:id="@+id/app_bar_main_tv_title"
+                        style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/title"
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/app_bar_main_iv_add"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/app_bar_main_iv_sideMenu"
+                        app:layout_constraintRight_toLeftOf="@+id/app_bar_main_iv_sideMenu"
+                        app:layout_constraintTop_toTopOf="@+id/app_bar_main_iv_sideMenu"
+                        app:srcCompat="@mipmap/ic_plus" />
+
+                    <ImageView
+                        android:id="@+id/app_bar_main_iv_sideMenu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@mipmap/ic_side_menu" />
+
+                    <ImageView
+                        android:id="@+id/app_bar_main_iv_logo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="24dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@mipmap/logo_top_bar" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/lightGray"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/app_bar_main_ab_appbar" />
+
+    <FrameLayout
+        android:id="@+id/app_bar_main_fl_mainContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/app_bar_main_ll_bottomContainer"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view">
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/app_bar_main_ll_bottomContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/box_bottom_bar"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+
+        <ImageView
+            android:id="@+id/app_bar_main_iv_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            app:srcCompat="@mipmap/ic_home_unsel" />
+
+        <ImageView
+            android:id="@+id/app_bar_main_iv_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            app:srcCompat="@mipmap/ic_profile_unsel" />
+
+        <ImageView
+            android:id="@+id/app_bar_main_iv_favorites"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            app:srcCompat="@mipmap/ic_fav_unsel" />
+
+        <ImageView
+            android:id="@+id/app_bar_main_iv_notifications"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            app:srcCompat="@mipmap/ic_notifi_unsel" />
+
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

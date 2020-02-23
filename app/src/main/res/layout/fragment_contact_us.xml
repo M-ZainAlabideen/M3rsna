@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightGray2"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/fragment_contact_us_cl_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/fragment_about_us_iv_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@mipmap/logo" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fragment_about_us_iv_logo">
+
+                <ImageView
+                    android:id="@+id/fragment_contact_us_iv_whatsApp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    app:srcCompat="@mipmap/ic_contact_whats"
+                    tools:layout_editor_absoluteX="197dp"
+                    tools:layout_editor_absoluteY="242dp" />
+
+                <ImageView
+                    android:id="@+id/fragment_contact_us_iv_instagram"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    app:srcCompat="@mipmap/ic_contact_instagram"
+                    tools:layout_editor_absoluteX="195dp"
+                    tools:layout_editor_absoluteY="266dp" />
+
+
+                <ImageView
+                    android:id="@+id/fragment_contact_us_iv_facebook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@mipmap/ic_facebook"
+                    android:padding="15dp"
+                    tools:layout_editor_absoluteX="195dp"
+                    tools:layout_editor_absoluteY="266dp" />
+
+                <ImageView
+                    android:id="@+id/fragment_contact_us_iv_snapChat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    app:srcCompat="@mipmap/ic_snapchat"
+                    tools:layout_editor_absoluteX="195dp"
+                    tools:layout_editor_absoluteY="266dp" />
+
+
+                <ImageView
+                    android:id="@+id/fragment_contact_us_iv_twitter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    app:srcCompat="@mipmap/ic_contact_twitter"
+                    tools:layout_editor_absoluteX="224dp"
+                    tools:layout_editor_absoluteY="323dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_marginStart="30dp"
+                android:text="@string/name"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+            <EditText
+                android:id="@+id/fragment_contact_us_et_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="24dp"
+                android:background="@mipmap/box_input"
+                android:ems="10"
+                android:textAlignment="viewStart"
+                android:inputType="text"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textColor="@color/grayDark"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView5"
+                app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/email"
+                android:layout_marginTop="18dp"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@+id/fragment_contact_us_et_name"
+                app:layout_constraintTop_toBottomOf="@+id/fragment_contact_us_et_name" />
+
+            <EditText
+                android:id="@+id/fragment_contact_us_et_email"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="24dp"
+                android:background="@mipmap/box_input"
+                android:ems="10"
+                android:textAlignment="viewStart"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textColor="@color/grayDark"
+                android:inputType="textEmailAddress"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView19"
+                app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+
+            <TextView
+                android:id="@+id/textView019"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/message"
+                android:layout_marginTop="18dp"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@+id/fragment_contact_us_et_email"
+                app:layout_constraintTop_toBottomOf="@+id/fragment_contact_us_et_email" />
+
+            <EditText
+                android:id="@+id/fragment_contact_us_et_message"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="24dp"
+                android:background="@mipmap/box_input_large"
+                android:ems="10"
+                android:lines="4"
+                android:gravity="top|start"
+                android:padding="12dp"
+                android:textColor="@color/grayDark"
+                android:inputType="textMultiLine"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView019"
+                app:layout_constraintTop_toBottomOf="@+id/textView019" />
+
+
+            <TextView
+                android:id="@+id/fragment_contact_us_tv_send"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="16dp"
+                android:background="@mipmap/bg_btn_add"
+                android:gravity="center"
+                android:text="@string/send"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/fragment_contact_us_et_message"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/fragment_contact_us_et_message"
+                app:layout_constraintTop_toBottomOf="@+id/fragment_contact_us_et_message"
+                app:layout_constraintVertical_bias="0.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ProgressBar
+            android:id="@+id/loading"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateTint="@color/orange"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

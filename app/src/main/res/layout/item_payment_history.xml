@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    android:orientation="horizontal"
+    android:background="@mipmap/box_payment_history">
+
+    <TextView
+        android:id="@+id/item_payment_history_tv_date"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_weight=".3"
+        android:text="12/4/2020\n03:12 PM"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/item_payment_history_tv_price"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:drawableTop="@mipmap/ic_arrow_green"
+        android:drawablePadding="1dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="120 KWD"
+        android:gravity="center"
+        android:layout_weight=".3"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/item_payment_history_tv_date"
+        app:layout_constraintEnd_toStartOf="@+id/item_payment_history_tv_description"
+        app:layout_constraintStart_toEndOf="@+id/item_payment_history_tv_date"
+        app:layout_constraintTop_toTopOf="@+id/item_payment_history_tv_date" />
+
+    <TextView
+        android:id="@+id/item_payment_history_tv_description"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="تجديد الباقة الشهرية"
+        android:layout_weight=".3"
+        android:gravity="center"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/item_payment_history_tv_price"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/item_payment_history_tv_price" />
+</LinearLayout>
